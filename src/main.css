@@ -1,0 +1,102 @@
+main.pacotes{
+  flex: 1;
+  width: 100%;
+  max-width: 780px;
+  
+}
+
+main.pacotes ul{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  list-style: none;
+  width: 100%;
+  
+  
+}
+
+
+
+
+li.pack-item{
+  background: #ffffff;
+  box-shadow: 0 0 14px 0 rgba(0,0,0,0.08);
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  
+  
+}
+li.pack-item header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+li.pack-item header img{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+li.pack-item header strong{
+  display: block;
+  font-size: 20px;
+  margin-left: 15px;
+}
+li.pack-item main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+ 
+}
+@media (max-width:750px){
+  li.pack-item main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+  }
+}
+@media (max-width:560px){
+  li.pack-item main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+  li.pack-item main div.item-box input{
+    display: block;
+    width: 25vw;
+    
+    list-style: none;
+  }
+}
+
+li.pack-item main div.item-box{
+  display: grid;
+  margin: 5px;
+  justify-content: center;
+}
+
+li.pack-item main div.item-box button{
+  display: flex;
+  height: auto;
+  width: 15vw;
+  max-width: 171.5px;
+  height: 30px;
+  justify-content: center;
+  background:#1890ff;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+li.pack-item main div.item-box button:hover{
+  background: #1850ff;
+}
+
+li.pack-item main div.item-box input{
+  display: block;
+  width: 15vw;
+  
+  list-style: none;
+}
